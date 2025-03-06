@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-200 .poppins-font">
+    <main class="max-w-full md:max-w-3xl lg:max-w-6xl mx-auto px-4">
+        <!-- Header Section -->
+        <header class="bg-white flex justify-between items-center rounded-md p-3 mt-5 w-full min-w-0">
+            <!-- Logo Section -->
+            <div class="flex items-center gap-2 text-sm sm:text-base md:text-lg flex-shrink-0">
+                <img class="w-6 sm:w-12 md:w-12 lg:w-[40px]" src="../assets/logo.png" alt="logo">
+                <h2>Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <!-- Right Side Icons -->
+            <button onclick="goBack()" class="hover:bg-blue-500 text-white p-2 border-none cursor-pointer rounded-md bg-blue-700">Back to Desk</button>
+        </header>
+        <section class="my-8 text-center text-2xl font-bold">
+            <div>Blogs</div>
+        </section>
+        <section>
+            <div class="mt-4 mb-5">
+                <!-- box 1 -->
+             <div class="bg-white rounded-sm">
+                <div class="p-5">
+                    <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+                </div>
+                <div class="border-t-2 border-dotted border-gray-300">
+                    <div class="p-5">
+                        <p>Different Ways to Select DOM Elements = Answer ( (1 = No) Select by ID: Finds an element using its unique ID. (2 = No) Select by Class Name: Selects multiple elements with the same class name. (3 = No) Select by Tag Name: Selects all elements with a specific HTML tag. (4 = No) Select by Name Attribute: Finds elements using the name attribute (mainly for form elements). (5 = No) Query Selector: Selects the first matching element using a CSS selector. (6 = No) Query Selector All: Selects all matching elements using a CSS selector.  (7 = No) Loop through NodeList: Use forEach on querySelectorAll results. Convert HTMLCollection to Array: Use Array.from() on getElementsByClassName results for array methods.)</p>
+                    </div>
+                </div>
+             </div>
+              <!-- box 2 -->
+              <div class="mt-4">
+                <!-- box 1 -->
+             <div class="bg-white rounded-sm">
+                <div class="p-5">
+                    <h1>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                </div>
+                <div class="border-t-2 border-dotted border-gray-300">
+                    <div class="p-5">
+                        <p>Difference Between innerHTML, innerText, and textContent = Answer ( (1 = No) innerHTML
+                            Returns or sets an element’s HTML content.
+                            Parses and renders HTML tags.
+                            Can be a security risk if untrusted content is used.
+                            Example: <b>Hello</b> → Hello (bold). (2 = No) innerText
+                            Returns or sets visible text only.
+                            Ignores hidden elements and does not format HTML.
+                            Example: <b>Hello</b> → <b>Hello</b> (plain text). (3 = No) textContent
+
+                            Returns or sets full text content, including hidden text.
+                            Displays text without formatting.
+                            Example: <b>Hello</b> → <b>Hello</b> (plain text, no HTML parsing).)</p>
+                    </div>
+                </div>
+             </div>
+              <!-- box 3 -->
+              <div class="mt-4">
+                <!-- box 1 -->
+             <div class="bg-white rounded-sm">
+                <div class="p-5">
+                    <h1>Question-3: What is event delegation in the DOM?</h1>
+                </div>
+                <div class="border-t-2 border-dotted border-gray-300">
+                    <div class="p-5">
+                        <p>Event Delegation in the DOM = Answer ( Event delegation is a technique where an event listener is added to a parent element to handle events for its child elements. Why is it needed? document.getElementById("parent").addEventListener("click", function(event) {
+                            console.log("Clicked on:", event.target);
+                        });
+                        Here, clicking on any child element inside #parent will trigger the event.
+                            Works for dynamically added elements.
+                            Uses a single event listener instead of multiple ones.
+                            Improves memory efficiency.
+                            How does it work?)</p>
+                    </div>
+                </div>
+             </div>
+              <!-- box 4 -->
+              <div class="mt-4">
+                <!-- box 1 -->
+             <div class="bg-white rounded-sm">
+                <div class="p-5">
+                    <h1>Question-4: What is event bubbling in the DOM?</h1>
+                </div>
+                <div class="border-t-2 border-dotted border-gray-300">
+                    <div class="p-5">
+                        <p>Event Bubbling in the DOM = Answer (Event bubbling occurs when a child element is clicked, and the event propagates up to its parent and ancestor Example: If a < button > is inside a < div > and the < button > is clicked, the < div > will also detect the click.  How it works:
+                            If both parent and child have a click event, clicking child triggers its event first, then parent (because events bubble up).Stop bubbling: Use event.stopPropagation(); to prevent the event from propagating upward) </p>
+                    </div>
+                </div>
+             </div>
+              <!-- box 5 -->
+              <div class="mt-4">
+                <!-- box 1 -->
+             <div class="bg-white rounded-sm">
+                <div class="p-5">
+                    <h1>Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                </div>
+                <div class="border-t-2 border-dotted border-gray-300">
+                    <div class="p-5">
+                        <p>Creating, Adding, and Removing Elements in JavaScript = Answer ( Creating an Element:
+                            Use document.createElement("tag") to create a new element.
+                            Example: Creating a ( p  ) element → let para = document.createElement("p"); Adding an Element:
+                            Use .appendChild() or .append() to add it inside another element.
+                            Example: Adding para inside div → div.appendChild(para); Removing an Element:
+                            Use .remove() to delete an element.
+                            Example: Removing para → para.remove();)</p>
+                    </div>
+                </div>
+             </div>
+            </div>
+    </section>
+    </main>
+    <script src="javaScript folder/sript.js"></script>
+</body>
+</html>

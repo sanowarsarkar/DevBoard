@@ -5,6 +5,23 @@ function changeBackgroundColor() {
      #${Math.floor(Math.random()*16777215).toString(16)})`;
 }
 
+//Clicking on the middle box will take you to the block page.
+
+function goTopage(){
+    window.location.href = "Blog.html"; 
+}
+
+//Click the button to return to the previous page.
+
+function goBack() {
+    if (document.referrer && document.referrer !== window.location.href) {
+        window.history.back();
+    } else {
+        window.location.href = "index.html";
+    }
+}
+
+
 //To show live dates
 
 function updateDateTime() {
